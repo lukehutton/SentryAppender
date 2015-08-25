@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using log4net.Layout;
-
 using SharpRaven.Data;
 using SharpRaven.Log4Net.Extra;
-
 using log4net.Appender;
 using log4net.Core;
 
@@ -78,7 +75,6 @@ namespace SharpRaven.Log4Net
                 }
             }
         }
-
 
         internal static ErrorLevel Translate(Level level)
         {
