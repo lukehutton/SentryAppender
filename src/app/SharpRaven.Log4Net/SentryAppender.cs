@@ -63,7 +63,7 @@ namespace SharpRaven.Log4Net
 
             if (exception != null)
             {
-                ravenClient.CaptureException(exception, null, level, tags: tags, extra: extra);
+                ravenClient.CaptureException(exception, loggingEvent.RenderedMessage, level, tags: tags, extra: extra);
             }
             else
             {
